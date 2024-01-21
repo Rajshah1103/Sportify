@@ -20,7 +20,6 @@ const AccountContent:FC<AccountContentProps> = ({})=> {
     const [loading,setLoading] = useState<boolean>(false)
 
     useEffect(()=>{
-        console.log(subscription?.prices?.products?.name);
         if(!isLoading && !user) {
             router.replace('/');
         }
